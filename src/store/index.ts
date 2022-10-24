@@ -1,0 +1,452 @@
+import Vue from "vue";
+import Vuex from "vuex";
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+  state: {
+    class: [
+      {
+        id: "9a",
+        name: "9-A",
+        dataCreate: "15.02.2022",
+        students: [
+          {
+            id: 1,
+            name: "Антон Петрович",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 3 },
+              { name: "Level", value: 2 },
+              { name: "Last time active", value: 12 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 1 },
+              { name: "Design", value: 3 },
+              { name: "Supply Chain Management & Transportation", value: 3 },
+              { name: "Architecture & Construction", value: 2 },
+              { name: "Marketing", value: 1 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 1 },
+              { name: "UI/UX designer", value: 3 },
+              { name: "Graphic designer", value: 3 },
+              { name: "Sales manager", value: 2 },
+              { name: "Librarian", value: 1 },
+            ],
+          },
+          {
+            id: 2,
+            name: "Кирилл Василевич",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 6 },
+              { name: "Level", value: 4 },
+              { name: "Last time active", value: 25 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 1 },
+              { name: "Design", value: 3 },
+              { name: "Supply Chain Management & Transportation", value: 3 },
+              { name: "Architecture & Construction", value: 4 },
+              { name: "Marketing", value: 5 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 3 },
+              { name: "UI/UX designer", value: 4 },
+              { name: "Graphic designer", value: 2 },
+              { name: "Sales manager", value: 2 },
+              { name: "Librarian", value: 1 },
+            ],
+          },
+          {
+            id: 3,
+            name: "Степан Бандера",
+            age: 16,
+            nameAdvent: [
+              { name: "Video", value: 1 },
+              { name: "Level", value: 5 },
+              { name: "Last time active", value: 56 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 5 },
+              { name: "Design", value: 1 },
+              { name: "Supply Chain Management & Transportation", value: 3 },
+              { name: "Architecture & Construction", value: 4 },
+              { name: "Marketing", value: 5 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 3 },
+              { name: "UI/UX designer", value: 3 },
+              { name: "Graphic designer", value: 5 },
+              { name: "Sales manager", value: 5 },
+              { name: "Librarian", value: 1 },
+            ],
+          },
+          {
+            id: 4,
+            name: "Игнат Альбертович",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 2 },
+              { name: "Level", value: 5 },
+              { name: "Last time active", value: 2 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 3 },
+              { name: "Design", value: 2 },
+              { name: "Supply Chain Management & Transportation", value: 4 },
+              { name: "Architecture & Construction", value: 5 },
+              { name: "Marketing", value: 5 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 2 },
+              { name: "UI/UX designer", value: 2 },
+              { name: "Graphic designer", value: 1 },
+              { name: "Sales manager", value: 5 },
+              { name: "Librarian", value: 1 },
+            ],
+          },
+          {
+            id: 5,
+            name: "Виктория Кириловна",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 1 },
+              { name: "Level", value: 2 },
+              { name: "Last time active", value: 2 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 1 },
+              { name: "Design", value: 3 },
+              { name: "Supply Chain Management & Transportation", value: 3 },
+              { name: "Architecture & Construction", value: 4 },
+              { name: "Marketing", value: 5 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 4 },
+              { name: "UI/UX designer", value: 2 },
+              { name: "Graphic designer", value: 3 },
+              { name: "Sales manager", value: 2 },
+              { name: "Librarian", value: 5 },
+            ],
+          },
+          {
+            id: 6,
+            name: "Василий Андреевич",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 15 },
+              { name: "Level", value: 3 },
+              { name: "Last time active", value: 1 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 1 },
+              { name: "Design", value: 4 },
+              { name: "Supply Chain Management & Transportation", value: 4 },
+              { name: "Architecture & Construction", value: 4 },
+              { name: "Marketing", value: 5 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 1 },
+              { name: "UI/UX designer", value: 5 },
+              { name: "Graphic designer", value: 3 },
+              { name: "Sales manager", value: 2 },
+              { name: "Librarian", value: 5 },
+            ],
+          },
+        ],
+      },
+      {
+        id: "10a",
+        name: "10-A",
+        dataCreate: "15.02.2022",
+        students: [
+          {
+            id: 1,
+            name: "Антон Петрович",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 4 },
+              { name: "Level", value: 9 },
+              { name: "Last time active", value: 7 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 4 },
+              { name: "Design", value: 3 },
+              { name: "Supply Chain Management & Transportation", value: 5 },
+              { name: "Architecture & Construction", value: 2 },
+              { name: "Marketing", value: 1 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 4 },
+              { name: "UI/UX designer", value: 1 },
+              { name: "Graphic designer", value: 1 },
+              { name: "Sales manager", value: 3 },
+              { name: "Librarian", value: 2 },
+            ],
+          },
+          {
+            id: 2,
+            name: "Кирилл Василевич",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 18 },
+              { name: "Level", value: 7 },
+              { name: "Last time active", value: 12 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 4 },
+              { name: "Design", value: 2 },
+              { name: "Supply Chain Management & Transportation", value: 1 },
+              { name: "Architecture & Construction", value: 4 },
+              { name: "Marketing", value: 5 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 5 },
+              { name: "UI/UX designer", value: 2 },
+              { name: "Graphic designer", value: 2 },
+              { name: "Sales manager", value: 3 },
+              { name: "Librarian", value: 2 },
+            ],
+          },
+          {
+            id: 3,
+            name: "Степан Бандера",
+            age: 16,
+            nameAdvent: [
+              { name: "Video", value: 3 },
+              { name: "Level", value: 15 },
+              { name: "Last time active", value: 62 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 5 },
+              { name: "Design", value: 3 },
+              { name: "Supply Chain Management & Transportation", value: 3 },
+              { name: "Architecture & Construction", value: 2 },
+              { name: "Marketing", value: 1 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 4 },
+              { name: "UI/UX designer", value: 5 },
+              { name: "Graphic designer", value: 1 },
+              { name: "Sales manager", value: 3 },
+              { name: "Librarian", value: 5 },
+            ],
+          },
+          {
+            id: 4,
+            name: "Ольга Мартыновна",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 4 },
+              { name: "Level", value: 2 },
+              { name: "Last time active", value: 15 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 1 },
+              { name: "Design", value: 5 },
+              { name: "Supply Chain Management & Transportation", value: 2 },
+              { name: "Architecture & Construction", value: 2 },
+              { name: "Marketing", value: 2 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 1 },
+              { name: "UI/UX designer", value: 4 },
+              { name: "Graphic designer", value: 3 },
+              { name: "Sales manager", value: 4 },
+              { name: "Librarian", value: 4 },
+            ],
+          },
+          {
+            id: 5,
+            name: "Евгений Викторович",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 4 },
+              { name: "Level", value: 9 },
+              { name: "Last time active", value: 17 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 5 },
+              { name: "Design", value: 3 },
+              { name: "Supply Chain Management & Transportation", value: 4 },
+              { name: "Architecture & Construction", value: 5 },
+              { name: "Marketing", value: 5 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 3 },
+              { name: "UI/UX designer", value: 5 },
+              { name: "Graphic designer", value: 2 },
+              { name: "Sales manager", value: 3 },
+              { name: "Librarian", value: 2 },
+            ],
+          },
+          {
+            id: 6,
+            name: "Полина Николаевна",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 3 },
+              { name: "Level", value: 0 },
+              { name: "Last time active", value: 62 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 1 },
+              { name: "Design", value: 3 },
+              { name: "Supply Chain Management & Transportation", value: 3 },
+              { name: "Architecture & Construction", value: 4 },
+              { name: "Marketing", value: 5 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 1 },
+              { name: "UI/UX designer", value: 3 },
+              { name: "Graphic designer", value: 3 },
+              { name: "Sales manager", value: 2 },
+              { name: "Librarian", value: 1 },
+            ],
+          },
+          {
+            id: 7,
+            name: "Виктория Алексеевна",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 9 },
+              { name: "Level", value: 8 },
+              { name: "Last time active", value: 15 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 2 },
+              { name: "Design", value: 4 },
+              { name: "Supply Chain Management & Transportation", value: 3 },
+              { name: "Architecture & Construction", value: 3 },
+              { name: "Marketing", value: 1 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 3 },
+              { name: "UI/UX designer", value: 5 },
+              { name: "Graphic designer", value: 5 },
+              { name: "Sales manager", value: 2 },
+              { name: "Librarian", value: 1 },
+            ],
+          },
+        ],
+      },
+      {
+        id: "11b",
+        name: "11-В",
+        dataCreate: "15.02.2022",
+        students: [
+          {
+            id: 1,
+            name: "Антон Петрович",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 9 },
+              { name: "Level", value: 5 },
+              { name: "Last time active", value: 12 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 1 },
+              { name: "Design", value: 3 },
+              { name: "Supply Chain Management & Transportation", value: 3 },
+              { name: "Architecture & Construction", value: 4 },
+              { name: "Marketing", value: 5 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 4 },
+              { name: "UI/UX designer", value: 2 },
+              { name: "Graphic designer", value: 3 },
+              { name: "Sales manager", value: 1 },
+              { name: "Librarian", value: 3 },
+            ],
+          },
+          {
+            id: 2,
+            name: "Кирилл Василевич",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 3 },
+              { name: "Level", value: 2 },
+              { name: "Last time active", value: 11 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 3 },
+              { name: "Design", value: 3 },
+              { name: "Supply Chain Management & Transportation", value: 2 },
+              { name: "Architecture & Construction", value: 5 },
+              { name: "Marketing", value: 4 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 2 },
+              { name: "UI/UX designer", value: 5 },
+              { name: "Graphic designer", value: 2 },
+              { name: "Sales manager", value: 1 },
+              { name: "Librarian", value: 5 },
+            ],
+          },
+          {
+            id: 3,
+            name: "Степан Бандера",
+            age: 16,
+            nameAdvent: [
+              { name: "Video", value: 2 },
+              { name: "Level", value: 9 },
+              { name: "Last time active", value: 8 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 5 },
+              { name: "Design", value: 2 },
+              { name: "Supply Chain Management & Transportation", value: 2 },
+              { name: "Architecture & Construction", value: 2 },
+              { name: "Marketing", value: 1 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 1 },
+              { name: "UI/UX designer", value: 3 },
+              { name: "Graphic designer", value: 3 },
+              { name: "Sales manager", value: 2 },
+              { name: "Librarian", value: 1 },
+            ],
+          },
+          {
+            id: 4,
+            name: "Игнат Альбертович",
+            age: 15,
+            nameAdvent: [
+              { name: "Video", value: 4 },
+              { name: "Level", value: 7 },
+              { name: "Last time active", value: 10 },
+            ],
+            leadingFields: [
+              { name: "Marketing", value: 1 },
+              { name: "Design", value: 3 },
+              { name: "Supply Chain Management & Transportation", value: 3 },
+              { name: "Architecture & Construction", value: 4 },
+              { name: "Marketing", value: 5 },
+            ],
+            careerFields: [
+              { name: "Digital marketing", value: 4 },
+              { name: "UI/UX designer", value: 1 },
+              { name: "Graphic designer", value: 3 },
+              { name: "Sales manager", value: 5 },
+              { name: "Librarian", value: 2 },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  getters: {
+    allClass(state) {
+      return state.class;
+    },
+  },
+  mutations: {
+    createClass(state, newClass) {
+      state.class.push(newClass);
+    },
+  },
+  actions: {},
+  modules: {},
+});
