@@ -61,7 +61,7 @@ export default new Vuex.Store({
           },
           {
             id: 3,
-            name: "Степан Бандера",
+            name: "Степан Андреевич",
             age: 16,
             nameAdvent: [
               { name: "Video", value: 1 },
