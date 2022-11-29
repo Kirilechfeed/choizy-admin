@@ -3,6 +3,8 @@ import VueRouter, { RouteConfig } from "vue-router";
 import StudentsCard from "@/components/students/StudentsCard.vue";
 import CareersList from "@/components/owerview/CareersList.vue";
 import InfoClass from "@/components/listStudent/InfoClass.vue";
+import PrevueBoard from "@/components/PrevueBoard.vue";
+import { component } from "vue/types/umd";
 
 Vue.use(VueRouter);
 
@@ -12,6 +14,10 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
+    {
+      path: "/",
+      component: PrevueBoard,
+    },
     {
       path: "/overview",
       component: CareersList,
